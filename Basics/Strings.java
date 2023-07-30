@@ -1,4 +1,4 @@
-import java.net.InetAddress;
+package Basics;
 import java.util.Scanner;
 
 public class Strings {

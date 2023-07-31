@@ -6,7 +6,8 @@ public class MissingNumber {
 
         int[] arr = {1,2,3,4,5,7};
         int n = arr.length;
-        int sum = n
+        int sum = n*(n+1)/2;
+        System.out.println(sum-7);
 
     }
 }

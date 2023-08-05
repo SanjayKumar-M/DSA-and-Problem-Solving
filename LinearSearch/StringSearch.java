@@ -2,8 +2,8 @@ package LinearSearch;
 
 public class StringSearch {
     public static void main(String[] args) {
-        String name = "Sanjay Kumar";
-        char target = ' ';
+        String name = "ElonMusk";
+        char target = 'o';
         System.out.println(search(name,target));
         
     }

@@ -7,7 +7,7 @@ public class Ceiling {
         System.out.println(ceiling(arr, target));
     }
 
-    
+     
     static int ceiling(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;

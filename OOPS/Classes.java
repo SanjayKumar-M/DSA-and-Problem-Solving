@@ -3,7 +3,7 @@ package OOPS;
 public class Classes {
     public static void main(String[] args) {
         Blockchain polygon = new Blockchain(2018,"Polygon","Sandeep Naiwal",167.2f);
-        System.out.print(polygon.founder,polygon.year,polygon.price,polygon.name);
+        System.out.print(polygon.name);
     }
 
 }

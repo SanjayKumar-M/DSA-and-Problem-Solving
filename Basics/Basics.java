@@ -1,6 +1,6 @@
 package Basics;
 import java.util.Scanner;
-
+//Java core Basics with problem solving
 class Basics{
     public static void main(String[] args) {
         

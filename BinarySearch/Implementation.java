@@ -1,6 +1,7 @@
 package BinarySearch;
 
 public class Implementation {
+    //implementation of binary search in java
     public static void main(String[] args) {
             int [] arr = {1,2,3,56,78,99,123,546,435,433};
             int [] des_arr = {567,364,231,77,66,43,21,10,1};

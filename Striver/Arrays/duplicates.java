@@ -9,7 +9,7 @@ public class duplicates {
                     arr[i] = arr[j];
                 }
             }
-            return i+1;
+            return i+1; //incrementing by 1 to return the exact size of the array
         }
     public static void main(String[] args) {
         int arr[] = {1,2,3,3,4,5,5};

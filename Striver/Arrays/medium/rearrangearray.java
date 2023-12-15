@@ -16,7 +16,7 @@ class Solution {
                 evenIndex += 2;
             } else {
                 result[oddIndex] = nums[i];
-                
+                // now i can add 2 with 1 so that it always results in odd index 
                 oddIndex += 2;
             }
         }

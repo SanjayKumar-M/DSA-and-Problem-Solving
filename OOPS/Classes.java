@@ -2,10 +2,8 @@ package OOPS;
 
 public class Classes {
     public static void main(String[] args) {
-        Blockchain polygon = new Blockchain(2018,"Polygon","Sandeep Naiwal",167.2f);
-        System.out.print(polygon.name);
-        Blockchain another = new Blockchain();
-        System.out.println(another.name);
+      Blockchain Ethereum = new Blockchain(2018,"ETH","Buterin",20.22f);
+      System.out.println(Ethereum);
     }
 
 }
@@ -30,5 +28,11 @@ class Blockchain {
         this.founder = founder;
         this.price = price;
 
+    }
+
+
+    @Override  
+    public String toString(){
+        return year + name + founder + price ;
     }
 }

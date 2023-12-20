@@ -4,6 +4,16 @@ public class Classes {
     public static void main(String[] args) {
       Blockchain Ethereum = new Blockchain(2018,"ETH","Buterin",20.22f);
       System.out.println(Ethereum);
+
+      // method to call non static variables or methods without defining static
+      Classes cls = new Classes();
+      cls.hello()
+    }
+    
+
+
+    void hello(){
+        System.out.println("hello");
     }
 
 }

@@ -8,6 +8,7 @@ public class Polymorphism {
         //method created which is not static (that is not related to object)
         void saymyName(){
             System.out.println("Hello My Name is Blockchain");
+            
         }
     }
 

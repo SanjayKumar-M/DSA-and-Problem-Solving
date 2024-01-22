@@ -12,6 +12,13 @@ class Node{
 }
 
 public class Implementation {
+    public static void main(String[] args) {
+
+        Node ll = new Node(1);
+       
+        
+    }
+   
     
     
 }

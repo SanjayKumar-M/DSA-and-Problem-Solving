@@ -1,0 +1,210 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Pract",
+            "request": "launch",
+            "mainClass": "Striver.LinkedList.Pract",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Arrays",
+            "request": "launch",
+            "mainClass": "Arrays",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "Basics",
+            "request": "launch",
+            "mainClass": "Basics.Basics",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "Numbers",
+            "request": "launch",
+            "mainClass": "Basics.Numbers",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "Strings",
+            "request": "launch",
+            "mainClass": "Basics.Strings",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "loops",
+            "request": "launch",
+            "mainClass": "Basics.loops",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "Ceiling",
+            "request": "launch",
+            "mainClass": "BinarySearch.Ceiling",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "Implementation",
+            "request": "launch",
+            "mainClass": "BinarySearch.Implementation",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "Bubble",
+            "request": "launch",
+            "mainClass": "Bubble",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "Evennum",
+            "request": "launch",
+            "mainClass": "LinearSearch.Evennum",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "SearchinRange",
+            "request": "launch",
+            "mainClass": "LinearSearch.SearchinRange",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "StringSearch",
+            "request": "launch",
+            "mainClass": "LinearSearch.StringSearch",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "maxwealth",
+            "request": "launch",
+            "mainClass": "LinearSearch.maxwealth",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "twodarray",
+            "request": "launch",
+            "mainClass": "LinearSearch.twodarray",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "Abundant",
+            "request": "launch",
+            "mainClass": "NumberProblems.Abundant",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "MissingNumber",
+            "request": "launch",
+            "mainClass": "NumberProblems.MissingNumber",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "Classes",
+            "request": "launch",
+            "mainClass": "OOPS.Classes",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "Polymorphism",
+            "request": "launch",
+            "mainClass": "OOPS.Polymorphism",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "Wrapper",
+            "request": "launch",
+            "mainClass": "OOPS.Wrapper",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "Recursion",
+            "request": "launch",
+            "mainClass": "Recursion.Recursion",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "Selection",
+            "request": "launch",
+            "mainClass": "Selection",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "arrayisSorted",
+            "request": "launch",
+            "mainClass": "Striver.Arrays.arrayisSorted",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "duplicates",
+            "request": "launch",
+            "mainClass": "Striver.Arrays.duplicates",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "rotate",
+            "request": "launch",
+            "mainClass": "Striver.Arrays.rotate",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "secondElement",
+            "request": "launch",
+            "mainClass": "Striver.Arrays.secondElement",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "zeros",
+            "request": "launch",
+            "mainClass": "Striver.Arrays.zeros",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "LinkedList",
+            "request": "launch",
+            "mainClass": "Striver.LinkedList.LinkedList",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
+            "name": "triplet",
+            "request": "launch",
+            "mainClass": "triplet",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        }
+    ]
+}

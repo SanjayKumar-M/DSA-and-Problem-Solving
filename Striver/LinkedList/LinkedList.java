@@ -1,55 +1,68 @@
 package Striver.LinkedList;
-class Node {
-    int value;   // any data type
-    Node next;
 
-    public Node(int value) {
-        this.value = value;
+class Node{
+    int data;
+    Node next;
+    Node(int data){
+        this.data = data;
         this.next = null;
     }
 }
 
-public class LinkedList {
+public class LinkedList{
+
     Node head;
-
-    public LinkedList() {
-        this.head = null;    // creating an empty ll
+    LinkedList(){
+        this.head = null;
     }
 
-    public void add(int value) {
-        Node newNode = new Node(value);
-        if (head == null) {
+    public void insert(int data){
+        Node newNode = new Node(data);
+        if(head == null){
             head = newNode;
-            return;
+        }
+        else{
+            Node currentNode = head;
+            while(currentNode.next != null){
+                currentNode = currentNode.next;
+            }
+            currentNode.next = newNode;
         }
 
-        Node currentNode = head;
-        while (currentNode.next != null) {
-            currentNode = currentNode.next;
-        }
-
-        currentNode.next = newNode;
     }
 
-    public void printList() {
-        Node currentNode = head;
+    public String result(){
+        Node current = head;
+        StringBuilder Result = new StringBuilder();
+        while(current != null){
+            Result.append(current.data);
+            if(current.next != null){
+                Result.append(" --> ");
+            }
+            else{
+                Result.append(" --> END ");
+            }
 
-        while (currentNode != null) {
-            System.out.print(currentNode.value + "->");
-            currentNode = currentNode.next;
+            current = current.next;
+            
+
+           
         }
-        System.out.println();
+        
+        return Result.toString();
+        
     }
 
     public static void main(String[] args) {
-        LinkedList linkedList = new LinkedList();
+        
+        LinkedList LL = new LinkedList();
+        for(int i=1;i<=10;i++){
+            LL.insert(i);
 
-        linkedList.add(1);
-        linkedList.add(2);
-        linkedList.add(3);
-        linkedList.add(4);
+        }
 
-        System.out.println("Linked List: ");
-        linkedList.printList();
+       System.out.println(LL.result());
+       
     }
+
 }

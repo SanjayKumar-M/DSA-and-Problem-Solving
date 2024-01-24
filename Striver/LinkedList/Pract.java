@@ -59,6 +59,25 @@ public class Pract {
     }
    }
 
+   public void insertNodeAtSpecificPlace(int value, int place) {
+    Node specificNode = new Node(value);
+
+    if (head == null && tail == null) {
+        head = tail = specificNode;
+    } else {
+        Node currentNode = head;
+        while (currentNode != null) {
+            if (currentNode.data == place) {
+                specificNode.next = currentNode.next;
+                currentNode.next = specificNode;
+                break; // Break out of the loop once the insertion is done
+            }
+            currentNode = currentNode.next;
+        }
+    }
+}
+
+
     public String printLinkedList(){
         Node current = head;
         StringBuilder Output = new StringBuilder();
@@ -83,6 +102,7 @@ public class Pract {
        ll.Insert(4);
        ll.Insert(5);
        ll.beginning(10);
+       ll.insertNodeAtSpecificPlace(200, 3);
         
         System.out.println(ll.printLinkedList());
         

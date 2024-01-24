@@ -37,6 +37,27 @@ public class Pract {
         // currentNode.next = newNode;
     }
    }
+   public int count(){
+    Node current = head;
+        int count = 0;
+        while(current != null){
+           count = count+current.data;
+        }
+        return count;
+
+   }
+
+   public void beginning(int value){
+    Node firstNode = new Node(value);
+    if(head == null){
+        head = firstNode;
+        tail = firstNode;
+    }
+    else{
+        firstNode.next = head;
+        head = firstNode;
+    }
+   }
 
     public String printLinkedList(){
         Node current = head;
@@ -56,10 +77,15 @@ public class Pract {
     }
     public static void main(String[] args) {
         Pract ll = new Pract();
-        for(int i =1;i<=10;i++){
-            ll.Insert(i);
-        }
+       ll.Insert(1);
+       ll.Insert(2);
+       ll.Insert(3);
+       ll.Insert(4);
+       ll.Insert(5);
+       ll.beginning(10);
+        
         System.out.println(ll.printLinkedList());
+        
     }
   
 }

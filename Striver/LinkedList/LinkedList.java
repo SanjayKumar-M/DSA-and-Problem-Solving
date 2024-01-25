@@ -3,66 +3,88 @@ package Striver.LinkedList;
 class Node{
     int data;
     Node next;
-    Node(int data){
+    Node (int data){
         this.data = data;
         this.next = null;
+
     }
 }
 
 public class LinkedList{
-
     Node head;
-    LinkedList(){
+    Node tail;
+    public LinkedList(){
         this.head = null;
+        this.tail = null;
+
     }
 
-    public void insert(int data){
+    public void Insert(int data){
         Node newNode = new Node(data);
-        if(head == null){
-            head = newNode;
+        if(head == null & tail == null){
+            head = tail = newNode;
         }
         else{
-            Node currentNode = head;
-            while(currentNode.next != null){
-                currentNode = currentNode.next;
-            }
-            currentNode.next = newNode;
+            tail.next = newNode;
+            tail = newNode;
         }
+
 
     }
-
-    public String result(){
-        Node current = head;
+    public void AtBeginning(int data){
+        Node beginningNode = new Node(data);
+        if(head == null && tail == null){
+            head = beginningNode;
+            tail = beginningNode;
+        }
+        else{
+           beginningNode.next = head;
+           head = beginningNode;
+        }
+    }
+    public void insertNodeAtSpecificPlace(int value, int place) {
+        Node specificNode = new Node(value);
+    
+        if (head == null && tail == null) {
+            head = tail = specificNode;
+        } else {
+            Node currentNode = head;
+            while (currentNode != null) {
+                if (currentNode.data == place) {
+                    specificNode.next = currentNode.next;
+                    currentNode.next = specificNode;
+                    break; // Break out of the loop once the insertion is done
+                }
+                currentNode = currentNode.next;
+            }
+        }
+    }
+    
+    public String Output(){
         StringBuilder Result = new StringBuilder();
-        while(current != null){
-            Result.append(current.data);
-            if(current.next != null){
-                Result.append(" --> ");
+        Node resultNode = head;
+        
+        while(resultNode != null){
+            Result.append(resultNode.data);
+            if(resultNode.next == null){
+                Result.append(" --> END");
             }
             else{
-                Result.append(" --> END ");
+                Result.append(" --> ");
             }
-
-            current = current.next;
-            
-
-           
+            resultNode= resultNode.next;
         }
-        
         return Result.toString();
-        
     }
 
     public static void main(String[] args) {
-        
-        LinkedList LL = new LinkedList();
-        for(int i=1;i<=10;i++){
-            LL.insert(i);
-
-        }
-
-       System.out.println(LL.result());
-       
+        LinkedList ll = new LinkedList();
+        ll.Insert(1);
+        ll.Insert(1);
+        ll.Insert(1);
+        ll.Insert(1);
+        ll.AtBeginning(10);
+        ll.insertNodeAtSpecificPlace(20, 1);
+        System.out.println(ll.Output());
     }
-
 }

@@ -61,7 +61,8 @@ public class LinkedList{
             Node newNode = new Node(data);
             Node current = head;
             Node previous = null;
-            while(index >0 && current != null){
+            while(index >0 && current != null){  
+        // that is for example i = 2 means it will continuew till i = 0 i.e ans achieved
                 previous = current;
                 current = current.next;
                 
@@ -70,7 +71,7 @@ public class LinkedList{
             previous.next = newNode;
             newNode.next = current;
         }
-        
+
         public String Output(){
             StringBuilder result = new StringBuilder();
             Node currentNode = head;

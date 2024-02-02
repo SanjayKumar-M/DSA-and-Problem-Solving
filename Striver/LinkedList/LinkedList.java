@@ -57,6 +57,20 @@ public class LinkedList{
 
         }
         
+        public void atIndex(int data,int index){
+            Node newNode = new Node(data);
+            Node current = head;
+            Node previous = null;
+            while(index >0 && current != null){
+                previous = current;
+                current = current.next;
+                
+                index--;
+            }
+            previous.next = newNode;
+            newNode.next = current;
+        }
+        
         public String Output(){
             StringBuilder result = new StringBuilder();
             Node currentNode = head;

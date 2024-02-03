@@ -57,6 +57,12 @@ public class LinkedList{
 
         }
         
+        public void removeFirst() {
+           Node temp = head;
+           temp = head.next;
+           head = temp;
+        }
+        
         public void atIndex(int data,int index){
             Node newNode = new Node(data);
             Node current = head;
@@ -95,8 +101,10 @@ public class LinkedList{
         ll.Insert(2);
         ll.Insert(3);
         ll.Insert(4);
-        ll.AtBeginning(10);
-        ll.reverse();
+        
+        // ll.reverse();
+        ll.removeFirst();
+
         // ll.insertNodeAtSpecificPlace(20, 1);
         System.out.println(ll.Output());
     }

@@ -17,7 +17,7 @@ public class LinkedList{
             this.head = null;
             this.tail = null;
         }
-
+//--------------------------------------------------------------------------------------------------------------
         public void Insert(int data){
             Node newNode = new Node(data);
             if(head == null && tail == null){
@@ -28,6 +28,7 @@ public class LinkedList{
                 tail = newNode;
             }
         }
+//--------------------------------------------------------------------------------------------------------------
         public void AtBeginning(int data){
             Node startingNode = new Node(data);
             if(head == null && tail == null){
@@ -38,6 +39,7 @@ public class LinkedList{
                 head = startingNode;
             }
         }
+//--------------------------------------------------------------------------------------------------------------
         public void reverse(){
             // 1->2->3->4->null  = 1-head, 4-tail,
             // so 3 pointers will be there previous = null,current=current.next,next = next.next
@@ -56,13 +58,13 @@ public class LinkedList{
             head = current;
 
         }
-        
+//--------------------------------------------------------------------------------------------------------------
         public void removeFirst() {
            Node temp = head;
            temp = head.next;
            head = temp;
         }
-
+//--------------------------------------------------------------------------------------------------------------
         public void removeEnd(){
             Node temp = head;
             while(head.next != null){
@@ -74,7 +76,7 @@ public class LinkedList{
             head = temp;
             
         }
-        
+ //--------------------------------------------------------------------------------------------------------------       
         public void atIndex(int data,int index){
             Node newNode = new Node(data);
             Node current = head;
@@ -90,7 +92,7 @@ public class LinkedList{
             newNode.next = current;
         }
 
-
+//--------------------------------------------------------------------------------------------------------------
         public String Output(){
             StringBuilder result = new StringBuilder();
             Node currentNode = head;

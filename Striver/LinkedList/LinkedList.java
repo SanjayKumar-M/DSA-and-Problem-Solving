@@ -66,14 +66,13 @@ public class LinkedList{
         }
 //--------------------------------------------------------------------------------------------------------------
         public void removeEnd(){
-            Node temp = head;
-            while(head.next != null){
-                if(head.next == null){
-                    temp = head.next;
-                    
-                }
-            }
-            head = temp;
+           Node current = head;
+           while(current.next != tail){
+            current = current.next;
+
+           }
+           current.next = null;
+           tail = current;
             
         }
  //--------------------------------------------------------------------------------------------------------------       

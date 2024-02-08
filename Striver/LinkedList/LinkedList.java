@@ -69,6 +69,23 @@ public class LinkedList{
 
         slow.next = slow.next.next;
     }
+    public Node clone() {
+        if (head == null) return null; // Handle edge case of empty list
+        
+        Node dummy = new Node(-1);
+        Node current = dummy;
+        Node temp = head;
+        
+        while (temp != null) {
+            current.next = new Node(temp.data); // Create a new node with the same data
+            current = current.next;
+            temp = temp.next; // Move to the next node in the original list
+        }
+        
+        current.next = null; // Terminate the cloned list
+        return dummy.next;
+    }
+    
     public String Output(){
         StringBuilder print = new StringBuilder();
         Node current = head;
@@ -102,6 +119,7 @@ public class LinkedList{
         // ll.insertNodeAtSpecificPlace(20, 1);
         System.out.println(ll.Output());
         System.out.println(ll.middle());
+        System.out.println(ll.clone());
         
     }
 

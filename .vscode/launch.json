@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ASCII",
+            "request": "launch",
+            "mainClass": "ASCII",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
             "name": "Palindrome",
             "request": "launch",
             "mainClass": "Striver.Strings.Palindrome",

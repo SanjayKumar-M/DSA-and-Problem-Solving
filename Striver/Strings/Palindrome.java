@@ -1,9 +1,7 @@
-package Striver.Strings;
-
 public class Palindrome {
-    public boolean main(String[] args) {
-        String name = "A man";
-      
+    public static boolean palindrome(String name) {
+        
+        name.toLowerCase();
         int start = 0;
         int end = name.length()-1;
         while(start < end){
@@ -13,7 +11,7 @@ public class Palindrome {
             while(start < end && !Character.isLetterOrDigit(name.charAt(end))){
                 end--;
             }
-            if(Character.toLowerCase(name.charAt(start)) != Character.isLowerCase(name.charAt(end))){
+            if(name.charAt(start) != name.charAt(end)){
                 return false;
             }
             start++;
@@ -22,6 +20,10 @@ public class Palindrome {
         return true;
 
         
+    }
+    public static void main(String[] args) {
+       
+        System.out.println(palindrome("malayalam"));
     }
     
 }

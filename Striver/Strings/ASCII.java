@@ -7,6 +7,16 @@ public class ASCII {
            
             System.out.println("The ASCII value of "+ ch +" is "+ ascii);
         }
+        StringBuilder newWord = new StringBuilder(word);
+        
+        int start = 0;
+        int end = newWord.length()-1;
+       
+            Character.toLowerCase(newWord.charAt(start));
+            Character.toUpperCase(newWord.charAt(end));
+       
+        System.out.println(newWord);
+        
     }
     
 }

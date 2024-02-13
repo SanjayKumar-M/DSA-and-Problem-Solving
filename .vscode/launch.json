@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Implementation",
+            "request": "launch",
+            "mainClass": "Striver.Stacks.Implementation",
+            "projectName": "DSA-and-Problem-Solving_d6ba0dde"
+        },
+        {
+            "type": "java",
             "name": "ASCII",
             "request": "launch",
             "mainClass": "ASCII",

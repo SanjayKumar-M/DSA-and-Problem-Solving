@@ -14,6 +14,7 @@ class ownStack{
     if(top > size){
         System.out.println("Stack limit reached!");
     }
+    
     else{
         this.values[top] = value;
         this.top++;

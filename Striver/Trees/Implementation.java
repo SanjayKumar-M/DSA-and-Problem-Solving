@@ -97,6 +97,21 @@ public class Implementation {
         PostOrderTraversal(rootNode);
     }
 
+
+    public int DepthOfTree(BST root, int depth, int data){
+        if(root == null ) return -1;
+        if(root.data == data) return depth;
+
+        if(data >= root.data) return DepthOfTree(root.right, depth+1, data);
+        return DepthOfTree(root.left, depth+1, data);
+
+    }
+
+    public int  Depth(int data){
+        return DepthOfTree(rootNode, 0, data);
+    }
+
+    
     public void InsertViaLoop(int data) {
         BST newNode = new BST(data);
         if (rootNode == null) {

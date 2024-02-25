@@ -20,4 +20,4 @@ class Solution {
     }
 }
 
-// simple pattern
+// simple pattern : add, recursion, remove, recursion

@@ -1,4 +1,4 @@
-package Recursion;
+package Striver.Recursion;
 public class Recursion {
     public static void main(String[] args) {
         

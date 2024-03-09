@@ -6,6 +6,8 @@ class Solution {
         return list;
     }
     public void subsets(int[] arr, int idx, List<List<Integer>>list,List<Integer> ls){
+        StringBuilder str = new StringBuilder();
+      
         if(idx>=arr.length){
             list.add(new ArrayList<>(ls));
             return;

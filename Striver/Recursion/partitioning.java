@@ -27,6 +27,7 @@ class Solution {
 }
 
     public List<List<Integer>> permuteUnique(int[] nums) {
+       
         Arrays.sort(nums);
         List<List<Integer>> result = new ArrayList<>();
         solve(nums,0,result);

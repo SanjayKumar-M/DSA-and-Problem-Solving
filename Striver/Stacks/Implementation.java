@@ -17,7 +17,7 @@ class ownStack{
     
     else{
         this.values[top] = value;
-        this.top++;
+        this.top++; 
     }
    }
 
